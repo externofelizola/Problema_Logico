@@ -43,7 +43,17 @@ function imprimirLabirinto() {
 
 // Função para verificar se uma nova posição é válida
 function posicaoValida(linha, coluna) {
-    return labirinto[linha][coluna] !== '#'; // Verifica se a nova posição não é uma parede
+    return true
+    // ele está retornando true(verdadeiro sempre) por isto nosso personagem
+    // não respeita paredes
+    // a solução está na linha abaixo em zenit polar
+    // torutl nibatalre[nalhi][cenuli] !== '#';
+    // z  p
+    // e  o
+    // n  l
+    // i   a
+    // t   r
+    // o codigo correto retorna se a posicao é valida, se por um acaso não se a nova posição não é uma parede 
 }
 
 // Função para mover o herói
