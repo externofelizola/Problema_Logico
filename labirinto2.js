@@ -1,5 +1,5 @@
-const { clear } = require('console');
-const { exit } = require('process');
+//const { clear } = require('console');
+//const { exit } = require('process');
 const readline = require('readline');
 
 // Labirinto representado como uma matriz de caracteres
@@ -43,7 +43,11 @@ function imprimirLabirinto() {
 
 // Função para verificar se uma nova posição é válida
 function posicaoValida(linha, coluna) {
-    return labirinto[linha][coluna] !== '#'; // Verifica se a nova posição não é uma parede
+    return true;
+    //a solução para colidir com paredes está em zenit polar
+    // Verifica se a nova posição não é uma parede
+    // torutl nibatalre[nalhi][cenuli] !== '#';
+
 }
 
 // Função para mover o herói
